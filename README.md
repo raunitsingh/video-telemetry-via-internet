@@ -25,3 +25,15 @@ The system is designed for:
 ---
 
 ## 🏗 System Architecture
+Raspberry Pi Camera
+│
+│ H.264 Stream
+▼
+FFmpeg
+│
+│ RTMP (TCP)
+▼
+AWS Nginx RTMP Server (Port 443)
+│
+▼
+Ground Station Viewer (FFplay / VLC)
